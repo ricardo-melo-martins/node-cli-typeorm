@@ -28,6 +28,19 @@ https://github.com/ricardo-melo-martins/docker
 
 ## Comandos
 
+### db:query
+
+Comando para interagir com o banco de dados.
+
+```bash
+$ npm run db:query "select * from film limit 2"
+
+```
+
+Exemplo de saída
+
+![alt text](docs/image.png)
+
 ### migrate:create
 
 Deve criar um arquivo de migração para subir uma alteração no banco de dados
@@ -86,11 +99,3 @@ $ npm run migrate:generate ./migrations/User
 
 ```
 
-### db:query
-
-Comando para interagir com o banco de dados.
-
-```bash
-$ npm run db:query "select * from film limit 2"
-
-```
